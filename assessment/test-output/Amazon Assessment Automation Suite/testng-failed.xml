@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Amazon Assessment Automation Suite]">
+  <listeners>
+    <listener class-name="amazon.assessment.core.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Login into Application(failed)">
+    <classes>
+      <class name="amazon.assessment.tests.SearchPurchaseTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="tearDown"/>
+          <include name="purchaseTV"/>
+        </methods>
+      </class> <!-- amazon.assessment.tests.SearchPurchaseTest -->
+    </classes>
+  </test> <!-- Login into Application(failed) -->
+</suite> <!-- Failed suite [Amazon Assessment Automation Suite] -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Assessment Automation Suite">
+  
+    <test name="Login into Application">
+		<classes>
+		    
+		   <class name="amazon.assessment.tests.LoginTest">
+      	     <methods>
+              <include name="loginIntoApplication"/>
+             </methods>
+          </class>
+          
+          <class name="amazon.assessment.tests.SearchPurchaseTest">
+      	     <methods>
+              <include name="changeTheCountryNameAsAustralia"/>
+              <include name="searchProductTV"/>
+              <include name="purchaseTV"/>
+              
+             </methods>
+          </class>
+          
+	 </classes>
+	</test>
+	
+    <listeners>
+     	  	<listener class-name="amazon.assessment.core.ExtentReporterNG"/>
+     	  
+  	</listeners>
+	  
+</suite> <!-- Suite -->
